@@ -267,6 +267,9 @@ home:
       Photos:
         icon: fa-regular fa-image
         path: /masonry/
+      Files:
+        icon: fa-regular fa-folder-open
+        path: https://onedrive-share.1465ghdg.neko-nya.top/
       # ...... # you can add more
   # Article date format
   article_date_format: auto # auto, relative, YYYY-MM-DD, YYYY-MM-DD HH:mm:ss etc.
