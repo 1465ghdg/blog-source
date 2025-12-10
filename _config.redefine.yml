@@ -267,8 +267,11 @@ home:
       Photos:
         icon: fa-regular fa-image
         path: /masonry/
+      Essays:
+        icon: fa-regular fa-comment-dots
+        path: /essays/
       Files:
-        icon: fa-regular fa-folder-open
+        icon: fa-regular fa-folder
         path: https://onedrive-share.1465ghdg.neko-nya.top/
       # ...... # you can add more
   # Article date format
