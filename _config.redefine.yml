@@ -264,6 +264,9 @@ home:
       Status:
         icon: fa-regular fa-chart-bar
         path: https://stats.uptimerobot.com/yaIsJtysx4
+      Stats:
+        icon: fa-regular fa-chart-line
+        path: https://cloud.umami.is/share/IBaViJJrC7pml5fN
       Photos:
         icon: fa-regular fa-image
         path: /masonry/
