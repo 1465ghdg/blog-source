@@ -23,11 +23,11 @@ info:
 # Docs: https://redefine-docs.ohevan.com/basic/defaults
 defaults:
   # Favicon
-  favicon: https://objectstorage.1465ghdg.neko-nya.top/7m66a7yw-blogresources/Creeper.jpg
+  favicon: https://oss-1465ghdg.neko-nya.top/blog/Creeper.jpg
   # Site logo
   logo:
   # Site avatar
-  avatar: https://objectstorage.1465ghdg.neko-nya.top/7m66a7yw-blogresources/Creeper.jpg
+  avatar: https://oss-1465ghdg.neko-nya.top/blog/Creeper.jpg
 # IMAGE CONFIGURATION <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< end
 
 # COLORS >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> start
