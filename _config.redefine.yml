@@ -419,7 +419,7 @@ footer:
   # Site statistics
   statistics: true # show site statistics or not (total articles, total words)
   # Footer message
-  customize: <a href="/atom.xml">RSS</a> / <a href="/sitemap.xml">Sitemap</a>
+  customize: <a href="/atom.xml">Atom</a> / <a href="/sitemap.xml">Sitemap</a>
   # ICP record number. See https://beian.miit.gov.cn/
   icp:
     enable: false # Whether to enable
