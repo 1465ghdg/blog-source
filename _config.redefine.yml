@@ -6,6 +6,7 @@
 # DEMO: https://redefine.ohevan.com
 # <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< end
 
+
 # BASIC INFORMATION >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> start
 # Docs: https://redefine-docs.ohevan.com/basic/info
 info:
@@ -19,16 +20,18 @@ info:
   url: https://blog.1465ghdg.neko-nya.top
 # BASIC INFORMATION <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< end
 
+
 # IMAGE CONFIGURATION >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> start
 # Docs: https://redefine-docs.ohevan.com/basic/defaults
 defaults:
   # Favicon
   favicon: /images/Creeper.jpg
   # Site logo
-  logo:
+  logo: 
   # Site avatar
   avatar: /images/Creeper.jpg
 # IMAGE CONFIGURATION <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< end
+
 
 # COLORS >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> start
 # Docs: https://redefine-docs.ohevan.com/basic/colors
@@ -41,26 +44,27 @@ colors:
   default_mode: dark # light, dark
 # COLORS <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< end
 
+
 # SITE CUSTOMIZATION >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> start
 # Docs: https://redefine-docs.ohevan.com/basic/global
 global:
   # Custom global fonts
   fonts:
     # Chinese fonts
-    chinese:
+    chinese: 
       enable: false # Whether to enable custom chinese fonts
-      family: # Font family
-      url: # Font URL to CSS file
+      family:  # Font family
+      url:  # Font URL to CSS file
     # English fonts
-    english:
+    english: 
       enable: false # Whether to enable custom english fonts
-      family: # Font family
-      url: # Font URL to CSS file
+      family:  # Font family
+      url:  # Font URL to CSS file
     # Custom title fonts (navbar, sidebar)
     title:
       enable: false # Whether to enable custom title fonts
-      family: # Font family
-      url: # Font URL to CSS file
+      family:  # Font family
+      url:  # Font URL to CSS file
   # Content max width
   content_max_width: 1000px
   # Sidebar width
@@ -100,8 +104,9 @@ global:
   # Google Analytics
   google_analytics:
     enable: false # Whether to enable Google Analytics
-    id: # Google Analytics Measurement ID
+    id:  # Google Analytics Measurement ID
 # SITE CUSTOMIZATION <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< end
+    
 
 # FONTAWESOME >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> start
 # Docs: https://redefine-docs.ohevan.com/basic/fontawesome
@@ -116,6 +121,7 @@ fontawesome: # Pro v6.2.1
   sharp_solid: false
 # FONTAWESOME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< end
 
+
 # HOME BANNER >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> start
 # Docs: https://redefine-docs.ohevan.com/home/home_banner
 home_banner:
@@ -124,7 +130,7 @@ home_banner:
   # style of home banner
   style: fixed # static or fixed
   # Home banner image
-  image:
+  image: 
     light: /images/wallhaven-wqery6-light.webp # light mode
     dark: /images/wallhaven-wqery6-dark.webp # dark mode
   # Home banner title
@@ -143,11 +149,11 @@ home_banner:
     loop: true # Whether to loop
     smart_backspace: true # Whether to smart backspace
   # Color of home banner text
-  text_color:
+  text_color: 
     light: "#fff" # light mode
     dark: "#d1d1b6" # dark mode
   # Specific style of the text
-  text_style:
+  text_style: 
     # Title font size
     title_size: 2.8rem
     # Subtitle font size
@@ -155,11 +161,11 @@ home_banner:
     # Line height between title and subtitle
     line_height: 1.2
   # Home banner custom font
-  custom_font:
+  custom_font: 
     # Whether to enable custom font
     enable: false
     # Font family
-    family:
+    family: 
     # URL to font CSS file
     url:
   # Home banner social links
@@ -170,17 +176,24 @@ home_banner:
     style: default # default, reverse, center
     # Social links
     links:
-      github: https://github.com/1465ghdg # your GitHub URL
-      instagram: # your Instagram URL
-      zhihu: # your ZhiHu URL
-      twitter: # your twitter URL
-      email: 1465ghdg@neko-nya.top # your email
-      # ...... # you can add more
+      - icon: github # can also be "fa-brands fa-github"
+        url: https://github.com/1465ghdg
+      - icon: twitter
+        url:
+      - icon: email
+        url: 1465ghdg@neko-nya.top
+      - icon: telegram
+        url:
+      - icon: /images/custom-icon.svg
+        url:
     # Social links with QRcode drawers
     qrs:
-      weixin: # your Wechat QRcode image URL
-      # ...... # you can add more
+      - icon: weixin
+        qr:
+      - icon: /images/custom-icon.svg
+        qr:
 # HOME BANNER <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< end
+
 
 # NAVIGATION BAR >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> start
 # Docs: https://redefine-docs.ohevan.com/home/navbar
@@ -189,8 +202,8 @@ navbar:
   auto_hide: false
   # Navbar background color
   color:
-    left: "#f78736" #left side
-    right: "#367df7" #right side
+    left: "#f78736" #left side 
+    right: "#367df7"  #right side
     transparency: 35 #percent (10-99)
   # Navbar width (usually no need to modify)
   width:
@@ -198,8 +211,8 @@ navbar:
     pages: 1000px #other pages
   # Navbar links
   links:
-    Home:
-      path: /
+    Home: 
+      path: / 
       icon: fa-regular fa-house # can be empty
       # Tags:
       #   icon: fa-solid fa-tags
@@ -240,6 +253,7 @@ navbar:
     # Preload search data when the page loads
     preload: true
 # NAVIGATION BAR <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< end
+
 
 # HOME PAGE ARTICLE SETTINGS >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> start
 # Docs: https://redefine-docs.ohevan.com/home/home
@@ -283,13 +297,14 @@ home:
   excerpt_length: 200 # Max length of article excerpt
   # Article categories visibility
   categories:
-    enable: true # Whether to enable
+    enable: true  # Whether to enable
     limit: 3 # Max number of categories to display
   # Article tags visibility
   tags:
-    enable: true # Whether to enable
-    limit: 3 # Max number of tags to display
+    enable: true  # Whether to enable
+    limit: 3  # Max number of tags to display
 # HOME PAGE ARTICLE SETTINGS <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< end
+
 
 # ARTICLE >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> start
 # Docs: https://redefine-docs.ohevan.com/posts/articles
@@ -317,7 +332,7 @@ articles:
     count: true # Whether to display word count
     min2read: true # Whether to display reading time
   # Author label
-  author_label:
+  author_label: 
     enable: true # Whether to enable
     auto: false # Whether to automatically add author label, e.g. Lv1, Lv2, Lv3...
     list: []
@@ -363,13 +378,14 @@ articles:
     skip_dirs: []
 # ARTICLE <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< end
 
+
 # COMMENT >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> start
 # Docs: https://redefine-docs.ohevan.com/posts/comment
 comment:
   # Whether to enable comment
   enable: true
   # Comment system
-  system: giscus # waline, gitalk, twikoo, giscus
+  system: giscus # waline, gitalk, twikoo, giscus, utterances, artalk
   # System configuration
   config:
     # Waline comment system. See https://waline.js.org/
@@ -405,7 +421,20 @@ comment:
       lang: zh-CN # Giscus language. e.g. en, zh-CN, zh-TW
       input_position: top # Place the comment box above/below the comments. e.g. top, bottom
       loading: lazy # Load the comments lazily
+    # Artalk comment system. See https://artalk.js.org/
+    artalk:
+      server: # Artalk server URL. e.g. https://artalk.example.com
+      site: # Site name shown in Artalk admin (should match server-side site config)
+    # Utterances comment system. See https://utteranc.es/
+    utterances:
+      repo: # GitHub repository name e.g. owner/repo (Issues must be enabled)
+      issue_term: pathname # pathname, url, title, og:title (recommended: pathname for single-page mode)
+      issue_number: # Use a specific issue number instead of issue_term
+      label: # Optional label for created issues
+      theme_light: github-light # Light theme
+      theme_dark: github-dark # Dark theme
 # COMMENT <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< end
+
 
 # FOOTER >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> start
 # Docs: https://redefine-docs.ohevan.com/footer
@@ -427,6 +456,7 @@ footer:
     url: # ICP record url
 # FOOTER <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< end
 
+
 # INJECT >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> start
 # Docs: https://redefine-docs.ohevan.com/inject
 inject:
@@ -441,6 +471,7 @@ inject:
     -
     -
 # INJECT <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< end
+
 
 # PLUGINS >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> start
 # Docs: https://redefine-docs.ohevan.com/plugins
@@ -470,6 +501,7 @@ plugins:
     version: "11.4.1" # default v11.4.1
 # PLUGINS <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< end
 
+
 # PAGE TEMPLATES >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> start
 # Docs: https://redefine-docs.ohevan.com/page_templates
 page_templates:
@@ -477,7 +509,12 @@ page_templates:
   friends_column: 2
   # Tags page style
   tags_style: blur # blur, cloud
+  # Masonry page batch size
+  masonry:
+    batch_size: 12
+    initial_batch_size: 24
 # PAGE TEMPLATES <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< end
+
 
 # CDN >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> start
 # Docs: https://redefine-docs.ohevan.com/cdn
@@ -489,7 +526,7 @@ cdn:
   # Custom CDN URL
   # format example: https://cdn.custom.com/hexo-theme-redefine/${version}/source/${path}
   # The ${path} must leads to the root of the "source" folder of the theme
-  custom_url:
+  custom_url: 
 # CDN <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< end
 
 # DEVELOPER MODE >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> start
