@@ -5,6 +5,7 @@ updated: 2026-02-26 03:22:14
 author: 极客湾Geekerwan
 tags: 补档
 categories: 补档
+thumbnail: https://onedrive-share.1465ghdg.neko-nya.top/api/name/%5B封面%5D零售机_游戏性能大横评_2026.jpg?path=/BV12mZtBTEJB/%5B封面%5D零售机_游戏性能大横评_2026.jpg
 copyright: By 极客湾Geekerwan
 ---
 <video controls preload="metadata" poster="https://onedrive-share.1465ghdg.neko-nya.top/api/name/%5B封面%5D零售机_游戏性能大横评_2026.jpg?path=/BV12mZtBTEJB/%5B封面%5D零售机_游戏性能大横评_2026.jpg">
