@@ -23,11 +23,11 @@ info:
 # Docs: https://redefine-docs.ohevan.com/basic/defaults
 defaults:
   # Favicon
-  favicon: /images/Creeper.jpg
+  favicon: https://avatars.githubusercontent.com/u/177911758?size=32
   # Site logo
   logo:
   # Site avatar
-  avatar: /images/Creeper.jpg
+  avatar: https://avatars.githubusercontent.com/u/177911758?size=512
 # IMAGE CONFIGURATION <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< end
 
 # COLORS >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> start
