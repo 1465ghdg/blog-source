@@ -57,10 +57,63 @@ PublicKey = <远端公钥>
   udp: true
   mtu: <预设 MTU>
 ```
-大功告成，现在享受国际超级无敌大厂的节点吧（  
+大功告成，现在享受国际超级无敌大厂的节点吧（
+
+对了...记得每隔大约 1 天用
+```bash
+./warp.sh -R <refresh_token>
+# refresh_token 在前面输出的第 9 行
+```
+刷新，配置不会变，但就是要刷新（
+
 // 虽然但是，这玩意儿延迟真高啊（
+## MASQUE
+如果想使用 `MASQUE` 连接 WARP, 可以使用 [usque](https://github.com/Diniboy1123/usque/) 生成配置
+```bash
+usque register --jwt <token>
+```
+然后从工作目录下其生成的 `config.json` 中提取内容
+```json
+{
+  "private_key": "<private_key>",
+  "endpoint_v4": "<endpoint_v4>",
+  "endpoint_v6": "<endpoint_v6>",
+  "endpoint_h2_v4": "<endpoint_h2_v4>",
+  "endpoint_h2_v6": "",
+  "endpoint_pub_key": "-----BEGIN PUBLIC KEY-----\nMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEIaU7MToJm9NKp8YfGxR6r+/h4mcG\n7SxI8tsW8OR1A5tv/zCzVbCRRh2t87/kxnP6lAy0lkr7qYwu+ox+k3dr6w==\n-----END PUBLIC KEY-----\n",
+  "license": "<license>",
+  "id": "<id>",
+  "access_token": "<access_token>",
+  "ipv4": "<ipv4>",
+  "ipv6": "<ipv6>"
+}
+```
+
+```yaml
+- name: "masque"
+  type: masque
+  server: <endpoint>
+  # network: h2 # 如果你需要使用 h2 连接的话
+  port: 443
+  public-key: MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEIaU7MToJm9NKp8YfGxR6r+/h4mcG7SxI8tsW8OR1A5tv/zCzVbCRRh2t87/kxnP6lAy0lkr7qYwu+ox+k3dr6w==
+  private-key: <private_key>
+  ip: <ipv4>
+  ipv6: <ipv6>
+  # udp: true # 如果你需要允许 udp 通过代理的话
+  # congestion-controller: bbr # 如果你需要改用 bbr 拥塞控制的话
+```
+## 更改 ip 属地
+通过将 endpoint 改为 `162.159.198.2` 或 `162.159.199.2`, 似乎可以让 WARP 为你分配位于美国的出口 ip
+
+据说使用了 NAT64 , 可能涉及滥用服务[^2]...?
+
+等等...上文提到的 endpoint 似乎就是 cloudflare 的...好吧我也不知道 WARP 为什么会这么做但...用就完了（
 ## 参考资料
 https://github.com/rany2/warp.sh
-https://wiki.metacubex.one/config/proxies/wg/#wireguard_1
+https://github.com/Diniboy1123/usque
+https://wiki.metacubex.one/config/proxies/wg/
+https://wiki.metacubex.one/config/proxies/masque/
+https://github.com/Diniboy1123/usque/issues/72
 
 [^1]: https://github.com/rany2/warp.sh/issues/14
+[^2]: https://github.com/Diniboy1123/usque/discussions/74#discussioncomment-16024482
