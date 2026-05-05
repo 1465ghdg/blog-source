@@ -1,7 +1,7 @@
 ---
 title: 将 Cloudflare Zero Trust 提供的 WARP+ 用于代理客户端
 date: 2026-04-06 21:56:16
-updated: 2026-04-07 21:04:32
+updated: 2026-05-05 21:54:55
 tags: cloudflare
 ---
 ## 前言
@@ -88,7 +88,6 @@ usque register --jwt <token>
   "ipv6": "<ipv6>"
 }
 ```
-
 ```yaml
 - name: "masque"
   type: masque
